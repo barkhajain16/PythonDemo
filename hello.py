@@ -1,7 +1,7 @@
 from selenium import webdriver
 
 try:
-    driver = webdriver.Chrome("F:\\drivers\\chromedriver.exe")
+    driver = webdriver.Chrome("chromedriver.exe")
     driver.get("https://www.google.com")
     
     driver.close()
