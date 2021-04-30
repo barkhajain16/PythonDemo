@@ -9,6 +9,7 @@ try:
     print(driver.title)
     driver.close()
     driver.quit()
+    print("Lets check if this calls Jenkins build")
 
 except:
     print("Hello")
