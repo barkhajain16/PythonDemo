@@ -1,9 +1,10 @@
 from selenium import webdriver
-import sys
+from selenium.webdriver.chrome.options import Options
 try:
     print("Opening browser")
-    print(sys.path)
-    driver = webdriver.Chrome("chromedriver.exe")
+    options = Options()
+    options.headless=True
+    driver = webdriver.Chrome("chromedriver.exe",chrome_options=options)
     driver.get("https://www.google.com")
     print(driver.title)
     driver.close()
