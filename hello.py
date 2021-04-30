@@ -5,7 +5,7 @@ try:
     print(sys.path)
     driver = webdriver.Chrome("chromedriver.exe")
     driver.get("https://www.google.com")
-    
+    print(driver.title)
     driver.close()
     driver.quit()
 
